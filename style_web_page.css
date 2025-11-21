@@ -1,0 +1,14 @@
+#image1{
+    display: flex;
+    justify-content: center;
+}
+#image2{
+    display: flex;
+    justify-content: center;
+}
+#img1{
+    margin: 10;
+}
+#img2{
+    margin: 10;
+}
