@@ -1,0 +1,15 @@
+
+#pics{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#part1{
+    padding: 20px;
+}
+#part2{
+    padding: 20px;
+}
+#part3{
+    padding: 20px;
+}
