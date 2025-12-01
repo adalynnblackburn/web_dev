@@ -22,9 +22,6 @@
         #img2{
             width: 25%;
         }
-        #button{
-
-        }
     </style>
     <body>
         <h1>What to Know about Cats!</h1>
@@ -56,9 +53,15 @@
         <button id="button" onclick="toggleContent()">Here are some good cat toys!</button>
         <script>
             function toggleContent(){
-                var box = document.getElementById("button-part");
+                var box = document.getElementById("info-2");
                 var btn = document.getElementById("button");
-                if ()
+                if (box.style.display === "none") {
+                    box.style.display = "block";
+                    btn.textContent = "Hide";
+                } else {
+                    box.style.display = "none";
+                    btn.textContent = "Show More Info";
+                }
             }
         </script>
     </body>
