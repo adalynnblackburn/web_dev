@@ -6,6 +6,19 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style_web_page.css">
         <link rel="stylesheet" href="webpage.css">
+        <script>
+            function toggleContent(){
+                var box = document.getElementById("button-part");
+                var btn = document.getElementById("button");
+                if (box.style.display == "none") {
+                    box.style.display = "block";
+                    btn.textContent = "Hide";
+                } else {
+                    box.style.display = "none";
+                    btn.textContent = "Show More Info";
+                }
+            }
+        </script>
     </head>
     <style>
         body{
@@ -21,6 +34,20 @@
         }
         #img2{
             width: 25%;
+        }
+        button{
+            background-color: rgb(0, 43, 4);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #002702;
         }
     </style>
     <body>
@@ -48,21 +75,10 @@
             <li><b>Catnip-Infused Toys</b> makes the cat happy or crazy</li>
         </ol>
         <a href="https://www.catastrophicreations.com/blogs/articles/years-best-cat-toys-reviewed-by-experts?srsltid=AfmBOoqnwrx1RjzmnSudBpaU8HxVEYTn69Fearrr9O_s95f7a5PgG03x">Here is some more info on keeping you cat entertained and active!</a>
+        <br>
+        <img src="https://cdn.petsathome.com/public/images/products/900_7111664.jpg"alt="Fruits and Veggies" height="200px"/>
         </div>
         </div>
         <button id="button" onclick="toggleContent()">Here are some good cat toys!</button>
-        <script>
-            function toggleContent(){
-                var box = document.getElementById("info-2");
-                var btn = document.getElementById("button");
-                if (box.style.display === "none") {
-                    box.style.display = "block";
-                    btn.textContent = "Hide";
-                } else {
-                    box.style.display = "none";
-                    btn.textContent = "Show More Info";
-                }
-            }
-        </script>
     </body>
 </html>
