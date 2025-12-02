@@ -1,4 +1,4 @@
-// JavaScript
+// JavaScript - JS
 
 function show(){
     document.getElementById("image").style.display = "block"
