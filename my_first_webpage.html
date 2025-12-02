@@ -15,18 +15,11 @@
                     btn.textContent = "Hide";
                 } else {
                     box.style.display = "none";
-                    btn.textContent = "Show More Info";
+                    btn.textContent = "Here are some good cat toys!";
                 }
             }
-            showing="none"
-            function hidden(){
-                if(showing=="none"){
-                    document.getElementById("toy").style.display="block"
-                    showing="block"
-                }else{
-                    document.getElementById("toy").style.display="none"
-                    showing="none"
-                }
+            function change(){
+                document.getElementById("cat").src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg"
             }
         </script>
     </head>
@@ -56,13 +49,11 @@
             display: block;
             cursor: pointer;
         }
-        button:hover{
-            background-color: #002702;
-        }
     </style>
     <body>
         <h1><span onmouseover="hidden()"></span>What to Know about Cats!</h1>
         <div id="part1">
+        <img id="cat" onmouseover="change()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10"alt="Fruits and Veggies" height="200px" />
         <h2>What Cats <b>can</b> Eat:</h1>
         <p>Cats can eat a variety of foods such as fish, different meats, eggs, most fruits in small amounts, select types of vegetables, and very few grains.<br><b>Meats & Fish:</b><br>Different meats and types of fish are necessary for cats because they contain proteins and amino acids and this is the main source of nutrition for cats. Raw meats are not good for cats and they must be cooked for the cats to be able to safely eat them. Meats also need to be plain and have no seasonings and cannot be fried.<br><b>Fruits & Vegetables:</b><br>Cats can eat a variety of fruits like apples, bananas, pears, blueberries, and strawberries. And vegetables like lettuce, green beans, cucumbers, and carrots. Cats should only be fed fruits in small amounts and servings. Fruits contain a lot of sugar and can make you cat extremely overweight and obese or fat. Vegetables also give vitamins and minerals that are neccesary for a cat but should also be fed in small amounts.<br><b>Grains:</b><br>Cats can have grains like oatmeal and rice. Cats don't neccesarily need these carbs and should be fed in small amounts occasionaly.</p>
         </div>
@@ -74,7 +65,6 @@
         <h3>What Cats <b>can't</b> Eat:</h2>
         <p>Cats can't eat a variety of foods in the fruit and vegetables category.<br><b>Fruits:</b><br>Cats cannot have grapes, oranges, cherries, and plums. These fruits can be very dangerous to cats and can cause symptoms like infections, obesity, and bladder issues. These fruits can cause seizures and even death./<br><b>Vegetables:</b><br>Cats cannot have onions and garlic in their diets. They can also have mushrooms but in small amounts and are not wild mushrooms. This can be fatal to your cat. </p>
         </div>
-        <img id="toy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10"alt="Fruits and Veggies" height="200px" />
         <div id="button-part" style="display: none;">
         <div id="part3">
         <h4>Some Good Cat Toys:</h4>
@@ -86,6 +76,7 @@
             <li><b>Catnip-Infused Toys</b> makes the cat happy or crazy</li>
         </ol>
         <a href="https://www.catastrophicreations.com/blogs/articles/years-best-cat-toys-reviewed-by-experts?srsltid=AfmBOoqnwrx1RjzmnSudBpaU8HxVEYTn69Fearrr9O_s95f7a5PgG03x">Here is some more info on keeping you cat entertained and active!</a>
+        <br>
         <br>
         <img src="https://cdn.petsathome.com/public/images/products/900_7111664.jpg"alt="Fruits and Veggies" height="200px"/>
         </div>
