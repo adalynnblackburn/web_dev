@@ -4,13 +4,7 @@
     <head>
         <title>Bear Lake</title>
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
-
-        <script>
-            
-        </script>
+        <script src="staycation.js"></script>
     </head>
     <style>
         body{
@@ -20,10 +14,66 @@
         h1{
             text-align: center;
         }
+        #bearlakeimg1{
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        h2{
+            padding: 20px;
+        }
+        #paragraph{
+            padding: 20px;
+        }
+        #bearlakeimg2{
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #bearlakeimg3{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button{
+            background-color: #025043;
+            color: #bbf1f1;
+            border-color: #025043;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
     </style>
 
     <body>
         <h1>Bear Lake</h1>
-        <p>fehowiefowef</p>
+        <img id="bearlakeimg1" onmouseover="change()" src="https://bearlake.org/wp-content/uploads/bear-lake-sight-seeing.jpg" alt="Bear Lake 1" height="250px"/>
+        <h2>All About Bear Lake:</h2>
+        <div id="content-wrapper">
+        <p id="paragraph">Bear Lake is on the border of Utah and Idaho. It is nicknamed "Caribbean of the Rockies". Bear Lake is a very popular tourist destination for many people traveling around Utah and Idaho. It's lake it a beautiful turquiose color and is surrounded by diverse wilderness. It spans 20 miles long and 8 miles wide.</p>
+        <img id="bearlakeimg2" src="https://cloudfront-us-east-1.images.arcpublishing.com/sltrib/NMMR6IOHONHLLFIWYR6FEF3A4U.JPG" alt="Bear Lake 2" height="250px"/>
+        </div>
+
+        <button id="button" onclick="toggleContent()">Things to do in Bear Lake!</button>
+        <div id="button-part" style="display: none;">
+        <div id="content-wrapper">
+        <img id="bearlakeimg3" src="https://www.rockymountainnationalpark.com/images/xl/20180910-19-08-17-lg.jpg" alt="Bear Lake 3" height="250px"/>
+        <ul>
+            <li>Jet Skiing</li>
+            <li>Scuba Diving</li>
+            <li>Boating</li>
+            <li>Ice Fishing (In the winter)</li>
+            <li>Hiking around the Lake</li>
+        </ul>
+        </div>
+        </div>
     </body>
 </html>
